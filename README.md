@@ -15,9 +15,9 @@ Tired of going to the gym and not knowing which work out you should. Why not che
 * Node.js
 
 ## Wireframes
---![Alt text](WIreframe.png)
+![Wireframe](WIreframe.png)
 ## ERDs
---![Alt text](ERD.jpeg)
+![ERD](ERD.jpeg)
 ## User Stories
 * 1. As a user, i want to custom make my workout for the day before i go to the gym.
 * 2. As a user, I want to be able to add the amount of reps and sets i do during each workout. i also want add the time it took me as well
