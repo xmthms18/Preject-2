@@ -17,13 +17,19 @@ Tired of going to the gym and not knowing which work out you should. Why not che
 ## Wireframes
 ![WIreframe](WIreframe.png)
 ## ERDs
-![ERD](ERD.jpeg)
+![ERD](ERD2.jpeg)
 ## User Stories
 * 1. As a user, i want to custom make my workout for the day before i go to the gym.
 * 2. As a user, I want to be able to add the amount of reps and sets i do during each workout. i also want add the time it took me as well
 * 3. As a user, i would like an app that is easy and simple to use so as to not interrupt my work to much
 
-##  MVP and Strech Goals
+##  MVP 
 * Be able to add, delete and edit workouts 
 * Be able to add times to already added work outs and sets
-* 
+* Allow users to register and log in to the application.
+
+## Strech Goals
+* Tracking: Create a log model to track and store the data
+* User Authentication:
+* Workout Categories: Add the ability to categorize workouts (e.g., cardio, strength training, yoga) and allow users to filter or search workouts by category.
+* Timer
