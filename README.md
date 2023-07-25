@@ -15,7 +15,7 @@ Tired of going to the gym and not knowing which work out you should. Why not che
 * Node.js
 
 ## Wireframes
-![Wireframe](WIreframe.png)
+![WIreframe](WIreframe.png)
 ## ERDs
 ![ERD](ERD.jpeg)
 ## User Stories
