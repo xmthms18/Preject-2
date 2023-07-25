@@ -15,7 +15,7 @@ Tired of going to the gym and not knowing which work out you should. Why not che
 * Node.js
 
 ## Wireframes
---
+--![Alt text](image-1.png)
 ## ERDs
 --
 ## User Stories
@@ -24,4 +24,6 @@ Tired of going to the gym and not knowing which work out you should. Why not che
 * 3. As a user, i would like an app that is easy and simple to use so as to not interrupt my work to much
 
 ##  MVP and Strech Goals
---
+* Be able to add, delete and edit workouts 
+* Be able to add times to already added work outs and sets
+* 
