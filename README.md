@@ -1,21 +1,26 @@
-# Project 2 oAuth Template
+# Fit for me (Workout App) 
 
-Use this repo as the base for your project 2.
+Tired of going to the gym and not knowing which work out you should. Why not check out, Fit For Me, an applcation that makes cataloguing  your workout simple and easy
 
-## Getting Started
+## How it will work.
 
-* clone this repo (no forking needed)
-* run `rm -rf .git` to remove the git history
-* run `git init` to create a new git history
-* create a new repo on github and follow the instructions to push an existing repository from the command line
-* run `npm i` to install the required packages
-* touch a `.env` file and add the following to it:
+* The user will be able to at indvidual exercises to each work out.
+* Add the time and abmout of reps it took to complet
+* User can read, edit, and delete these workouts, to complete the CRUD process.
 
-```shell
-DATABASE_URL= < copy mongo uri from atlas / previous project >
-GOOGLE_CLIENT_ID= < copy from google cloud devs / previous project >
-GOOGLE_SECRET=< copy from google cloud devs / previous project >
-GOOGLE_CALLBACK=http://localhost:3000/oauth2callback
-SECRET="can be any string"
-```
-* run `nodemon` to test your app! 
+## Technologies being used:
+Javascript
+HTML
+CSS 
+Node.js
+
+## Wireframes
+
+## ERDs
+
+## User Stories
+*1. As a user, i want to c`ustom make my workout for the day before i go to the gym.
+* 2. As a user, I want to be able to add the amount of reps and sets i do during each workout. i also want add the time it took me as well
+* 3. As a user, i would like an app that is easy and simple to use so as to not interrupt my work to much
+
+##  MVP and Strech Goals
