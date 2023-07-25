@@ -9,10 +9,10 @@ Tired of going to the gym and not knowing which work out you should. Why not che
 * User can read, edit, and delete these workouts, to complete the CRUD process.
 
 ## Technologies being used:
-Javascript
-HTML
-CSS 
-Node.js
+* Javascript
+* HTML
+* CSS 
+* Node.js
 
 ## Wireframes
 
