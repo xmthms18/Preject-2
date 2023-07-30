@@ -21,25 +21,25 @@ Tired of going to the gym and not knowing which work out you should. Why not che
 
 ## Restful Route For Contacts
 
-|      Entity      |      HTTP Verb      |       Route                |
-|------------------|---------------------|----------------------------|
-| User             | GET                 | /api/users                 |
-|                  | POST                | /api/users                 | 
-|                  | GET                 | /api/users/:userID         |
-|                  | PUT                 | /api/users/:userID         |
-|                  | DELETE              | /api/users/:userID         |
+|      Entity      |      HTTP Verb      |       Route            |
+|------------------|---------------------|------------------------|
+| User             | GET                 | /users                 |
+|                  | POST                | /users                 | 
+|                  | GET                 | /users/:userID         |
+|                  | PUT                 | /users/:userID         |
+|                  | DELETE              | /users/:userID         |
 ||
-| Workout          | GET                 | /api/workouts              |
-|                  | POST                | /api/workouts              |
-|                  | GET                 | /api/workouts/:workoutID   |
-|                  | PUT                 | /api/workouts/:workoutID   |
-|                  | DELETE              | /api/workouts/:workoutID   |
+| Workout          | GET                 | /workouts              |
+|                  | POST                | /workouts              |
+|                  | GET                 | /workouts/:workoutID   |
+|                  | PUT                 | /workouts/:workoutID   |
+|                  | DELETE              | /workouts/:workoutID   |
 ||
-| Exercise         | GET                 | /api/exercises             |
-|                  | POST                | /api/exercises             |
-|                  | GET                 | /api/exercises/:exerciseID |
-|                  | PUT                 | /api/exercises/:exerciseID |
-|                  | DELETE              | /api/exercises/:exerciseID |
+| Exercise         | GET                 | /exercises             |
+|                  | POST                | /exercises             |
+|                  | GET                 | /exercises/:exerciseID |
+|                  | PUT                 | /exercises/:exerciseID |
+|                  | DELETE              | /exercises/:exerciseID |
 
 
 
