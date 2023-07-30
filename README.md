@@ -28,13 +28,13 @@ Tired of going to the gym and not knowing which work out you should. Why not che
 |                  | GET                 | /api/users/:userID         |
 |                  | PUT                 | /api/users/:userID         |
 |                  | DELETE              | /api/users/:userID         |
-|---------------------------------------------------------------------|
+||
 | Workout          | GET                 | /api/workouts              |
 |                  | POST                | /api/workouts              |
 |                  | GET                 | /api/workouts/:workoutID   |
 |                  | PUT                 | /api/workouts/:workoutID   |
 |                  | DELETE              | /api/workouts/:workoutID   |
-|---------------------------------------------------------------------|
+||
 | Exercise         | GET                 | /api/exercises             |
 |                  | POST                | /api/exercises             |
 |                  | GET                 | /api/exercises/:exerciseID |
