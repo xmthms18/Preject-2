@@ -19,28 +19,27 @@ Tired of going to the gym and not knowing which work out you should. Why not che
 ## ERDs
 ![ERD](ERD2.jpeg)
 
-### Restful Route For Contacts
-+------------------+---------------------+----------------------------+
+## Restful Route For Contacts
+
 |      Entity      |      HTTP Verb      |       Route                |
-+------------------+---------------------+----------------------------+
+|------------------|---------------------|----------------------------|
 | User             | GET                 | /api/users                 |
 |                  | POST                | /api/users                 | 
 |                  | GET                 | /api/users/:userID         |
 |                  | PUT                 | /api/users/:userID         |
 |                  | DELETE              | /api/users/:userID         |
-+------------------+---------------------+----------------------------+
+|---------------------------------------------------------------------|
 | Workout          | GET                 | /api/workouts              |
 |                  | POST                | /api/workouts              |
 |                  | GET                 | /api/workouts/:workoutID   |
 |                  | PUT                 | /api/workouts/:workoutID   |
 |                  | DELETE              | /api/workouts/:workoutID   |
-+------------------+---------------------+----------------------------+
+|---------------------------------------------------------------------|
 | Exercise         | GET                 | /api/exercises             |
 |                  | POST                | /api/exercises             |
 |                  | GET                 | /api/exercises/:exerciseID |
 |                  | PUT                 | /api/exercises/:exerciseID |
 |                  | DELETE              | /api/exercises/:exerciseID |
-+------------------+---------------------+----------------------------+
 
 
 
