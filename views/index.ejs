@@ -1,6 +1,6 @@
 <%- include('./partials/header') %>
 
-<h2>Home Page</h2>
+<h1>Fit4Me</h1>
 
 <% if (!user) { %>
 	<p>please login to continue</p>
@@ -10,5 +10,11 @@
 		<img src="<%= user.avatar %>" alt="<%= user.name %>'s avatar" />
 	<% } %>
 <% } %>
+
+<h2> My Workout Plan</h2>
+<button> Edit </button>
+
+<h2>Recent Activity</h2>
+<button> Add </button>
 
 <%- include('./partials/footer') %>
