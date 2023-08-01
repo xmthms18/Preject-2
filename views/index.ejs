@@ -1,20 +1,44 @@
-<%- include('./partials/header') %>
 
-<h1>Fit4Me</h1>
+		
+		<%- include('partials/header') %>
+	
+        
+        
+		
+  
+		<main id="site-main">
+            <div class="container-2">
+                <div class="box-nav d-flex-justify-between">
+                    <a href="/add-exercise" class="border-shadow">
+                        <span class="text-gradient">Add Workout</span>
+                    </a>
+                </div>
+        
+                <!--Form Handling-->
+                <form action="/" method="POST">
+                    <table class="table">
+                        <thead class="thead-dark">
+                            <tr> 
+                                <th> ID</th>
+                                <th> Name</th>
+                                <th> Reps </th>
+                                <th> Sets</th>
+                                <th> Status</th>
+                                <th> Edit</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <%- include('partials/show') %>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+        </main>
+        <!---Main Site--->
+        
+            
 
-<% if (!user) { %>
-	<p>please login to continue</p>
-<% } else { %>
-	<p>Welcome, <%= user.name %> <%= user.email %></p>
-	<% if (user.avatar) { %>
-		<img src="<%= user.avatar %>" alt="<%= user.name %>'s avatar" />
-	<% } %>
-<% } %>
-
-<h2> My Workout Plan</h2>
-<button> Edit </button>
-
-<h2>Recent Activity</h2>
-<button> Add </button>
-
-<%- include('./partials/footer') %>
+		
+		<!-- include footer -->
+		<%- include('partials/footer') %>
+		<!-- /include footer -->

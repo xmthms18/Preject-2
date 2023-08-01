@@ -6,20 +6,22 @@ const logger = require('morgan');
 const session = require('express-session');
 const passport = require('passport');
 
-
-require('dotenv').config();
-require('./config/database');
-
-require('./config/passport');
-
 const indexRouter = require('./routes/index');
+const workoutRoutes = require('./routes/workouts');
+
+
 
 const app = express();
 
+// load Routers
+app.use('/',require('./routes/router'))
 
-// view engine setup
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'ejs');
+// Load environment variables from .env file
+require('dotenv').config();
+// Database setup
+require('./config/database');
+// Database setup
+require('./config/passport');
 
 app.use(logger('dev'));
 app.use(express.json());
@@ -27,22 +29,30 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Serve your CSS files from the /public/style directory at /css route
+app.use('/css',express.static(path.resolve(__dirname, 'public', 'style')));
+
+// Setup Express session
 app.use(session({
   secret: process.env.SECRET,
   resave: false,
   saveUninitialized: true
 }));
 
+// Initialize Passport and setup sessions
 app.use(passport.initialize());
 app.use(passport.session());
 
 // Add this middleware BELOW passport middleware
 app.use(function (req, res, next) {
-	res.locals.user = req.user;
+  res.locals.user = req.user;
   next();
 });
+// view engine setup
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views'));
 
-app.use('/', indexRouter);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -61,3 +71,20 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
