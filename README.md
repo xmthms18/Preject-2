@@ -50,7 +50,6 @@ Tired of going to the gym and not knowing which work out you should. Why not che
 
 ##  MVP 
 * Be able to add, delete and edit workouts 
-* Be able to add times to already added work outs and sets
 * Allow users to register and log in to the application.
 * Create, Read, Update, and Delete (CRUD) for Exercises: Users should be able to:
 * * Create new exercises with a name and description.
