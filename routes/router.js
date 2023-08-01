@@ -18,7 +18,7 @@ const controller =require('../controllers/controller');
 
   //api
   route.post('/api/exercise', controller.create)
-  route.get('/api/exercise', controller.find)
+//   route.get('/api/exercise', controller.find)
   route.put('/api/exercise/:id', controller.update)
   route.delete('/api/exercise/:id', controller.delete)
   
