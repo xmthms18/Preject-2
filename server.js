@@ -5,16 +5,13 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const session = require('express-session');
 const passport = require('passport');
-
-const indexRouter = require('./routes/index');
-const workoutRoutes = require('./routes/workouts');
+const bodyparser = require("body-parser");
+const formData = require("express-form-data");
 
 
 
 const app = express();
 
-// load Routers
-app.use('/',require('./routes/router'))
 
 // Load environment variables from .env file
 require('dotenv').config();
@@ -28,9 +25,15 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(formData.parse())
+
 
 // Serve your CSS files from the /public/style directory at /css route
 app.use('/css',express.static(path.resolve(__dirname, 'public', 'style')));
+app.use('/js',express.static(path.resolve(__dirname, 'public', 'js')));
+
+// load Routers
+app.use('/',require('./routes/router'))
 
 // Setup Express session
 app.use(session({
@@ -71,20 +74,3 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

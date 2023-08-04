@@ -1,21 +1,21 @@
 const mongoose = require('mongoose');
 
 let schema = new mongoose.Schema({
-    name : {
-        type : String,
+    name: {
+        type: String,
         required: true
     },
-    Reps : {
+    reps: {
         type: Number,
         required: true,  
     },
-    Sets : {
+    sets: {
         type: Number,
         required: true,
     },
-    status : String
+    status: String
 })
 
-const Exercisedb = mongoose.model('exercisedb', schema);
+const Exercisedb = mongoose.model('Exercisedb', schema);
 
 module.exports = Exercisedb;

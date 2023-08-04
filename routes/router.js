@@ -17,8 +17,8 @@ const controller =require('../controllers/controller');
   route.get('/update-exercise', services.update_exercise);
 
   //api
-  route.post('/api/exercise', controller.create)
-//   route.get('/api/exercise', controller.find)
+  route.post('/api/exercise', controller.createExercise);
+  route.get('/api/exercise/', controller.find); // Wrap the controller.find function here
   route.put('/api/exercise/:id', controller.update)
   route.delete('/api/exercise/:id', controller.delete)
   
