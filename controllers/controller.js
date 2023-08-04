@@ -8,6 +8,15 @@ exports.createExercise = (req, res) => {
         res.status(400).send({ message: "Content can not be emtpy!" });
         return;
     }
+
+    // new user
+    const user = new Userdb({
+        name : req.body.name,
+        email : req.body.email,
+        gender: req.body.gender,
+        status : req.body.status
+    })
+
     Exercisedb.create(req.body)
         .then(exercise => {
             res.redirect("/");
@@ -43,10 +52,11 @@ exports.update = (req, res) => {
     const id = req.params.id;
     Exercisedb.findByIdAndUpdate(id,req.body,{useFindAndModify: false})
      .then(exercise => {
-        if(!data){
+        if(!exercise){
             res.status(404).send({ message: `No exercise with that ${id}. has been found.`});
         }else{
-            res.send(data);
+            // Redirect to the updated exercise page or any other desired page
+            res.redirect('/' + id);
         }
        })
        .catch(err => {

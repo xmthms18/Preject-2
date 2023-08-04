@@ -13,6 +13,8 @@ Tired of going to the gym and not knowing which work out you should. Why not che
 * HTML
 * CSS 
 * Node.js
+* MongoDB
+
 
 ## Wireframes
 ![Wireframe](Wireframe.png)
