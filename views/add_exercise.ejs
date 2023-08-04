@@ -1,6 +1,8 @@
+<!-- include header -->
 <%- include('partials/header') %>
+<!-- include header -->
 
-
+<!--Main Site-->
 <main id="site-main">
 
     <div class="container-2">
@@ -15,43 +17,14 @@
         </div>
 
 
+<!--add exercise form-->
+<%- include('partials/form') %>
+<!--add exercise form-->
 
-        <!--Form Handling-->
-        <form method="POST" id="update_exercise">
-            <div class="new_exercise">
-                <div class="form-group">
-                    <label for="name" class="text-light">Name</label>
-                    <input type="hidden" name="id" value="">
-                    <input type="text" name="name" value="" placeholder="Dumbbells">
-                </div>
-                <div class="form-group">
-                    <label for="name" class="text-light">Reps</label>
-                    <input type="text" name="reps" value="" placeholder="2">
-                </div>
-                <div class="form-group">
-                    <label for="name" class="text-light">Sets</label>
-                    <input type="text" name="sets" value="" placeholder="2">
-                </div
-            </div>
-
-            <div class="form-group">
-                <label for="" class="text-light">Status</label>
-                <div class="radio inline">   
-                   <input type="radio" id="radio-1" name="status" value="Done">
-                   <label for="radio-1" class="radio-label">Complete</label>
-                </div>
-                <div class="radio inline">
-                    <input type="radio" id="radio-2"name="status" value="Uncomplete">
-                    <label for="radio-2" class="radio-label">uncomplete</label>
-                </div>
-            </div>
-
-            <div class="form-group">
-                <button type="submit" class="btn text-dark update">Save</button>
-            </div>
-      </form>
     </div>
 </main>
+<!--Main Site-->
+        
 
 
 

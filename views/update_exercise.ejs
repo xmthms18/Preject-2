@@ -21,27 +21,27 @@
             <div class="new_exercise">
                 <div class="form-group">
                     <label for="name" class="text-light">Name</label>
-                    <input type="hidden" name="id" value="">
-                    <input type="text" name="name" value="" placeholder="Dumbbells">
+                    <input type="hidden" name="id" value="<%= exercise._id %>">
+                    <input type="text" name="name" value="<%= exercise.name %>" placeholder="Dumbbells">
                 </div>
                 <div class="form-group">
                     <label for="name" class="text-light">Reps</label>
-                    <input type="text" name="reps" value="" placeholder="2">
+                    <input type="text" name="reps" value="<%= exercise.reps %>" placeholder="2">
                 </div>
                 <div class="form-group">
                     <label for="name" class="text-light">Sets</label>
-                    <input type="text" name="sets" value="" placeholder="2">
+                    <input type="text" name="sets" value="<%= exercise.sets %>" placeholder="2">
                 </div
             </div>
 
             <div class="form-group">
                 <label for="" class="text-light">Status</label>
                 <div class="radio inline">   
-                   <input type="radio" id="radio-1" name="status" value="Active">
+                   <input type="radio" id="radio-1" name="status" value="Done" <%= exercise.status === 'Done'? 'checked': '' %>>
                    <label for="radio-1" class="radio-label">Active</label>
                 </div>
                 <div class="radio inline">
-                    <input type="radio" id="radio-2"name="status" value="Inactive">
+                    <input type="radio" id="radio-2"name="status" value="Not Done" <%= exercise.status === 'Not-Done'? 'checked': '' %>>
                     <label for="radio-2" class="radio-label">Inactive</label>
                 </div>
             </div>
