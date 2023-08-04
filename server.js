@@ -34,7 +34,7 @@ app.use('/js',express.static(path.resolve(__dirname, 'public', 'js')));
 
 // load Routers
 app.use('/',require('./routes/router'))
-
+app.use('/',require('./routes/index'))
 // Setup Express session
 app.use(session({
   secret: process.env.SECRET,

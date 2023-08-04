@@ -1,7 +1,24 @@
 
-		
-		<%- include('partials/header') %>
-	
+<%- include('partials/header') %>
+
+</header>
+
+<% if (user) { %>
+    <a href="/logout">LOG OUT</a>
+  <% } else { %>
+    <% } %>
+    <a href="/auth/google">LOG IN</a>
+    
+<% if (!user) { %>
+    <p>please login to continue</p>
+        <% } else { %>
+            <p>Welcome, <%= user.name %> <%= user.email %></p>
+            <% if (user.avatar) { %>
+                <img src="<%= user.avatar %>" alt="<%= user.name %>'s avatar" />
+            <% } %>
+        <% } %>
+
+
 
 		<main id="site-main">
             <div class="container-2">
