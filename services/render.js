@@ -4,7 +4,7 @@ const axios = require('axios');
 exports.homeRoutes = (req, res) => {
     const user = req.user;
     // Makes a GET request to the 'index.ejs' view file
-    axios.get('http://localhost:3000/api/exercise')
+    axios.get(`${process.env.API_URL}/api/exercise`)
     .then(function(response) {
         
         res.render('index', {exercise: response.data, user: user}); // This should render the 'index.ejs' view file 
