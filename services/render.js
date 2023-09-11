@@ -21,7 +21,7 @@ exports.add_exercise = (req, res) => {
 
 
 exports.update_exercise = (req, res) => {
-    axios.get('http://localhost:3000/api/exercise', { params :{id: req.query.id}})
+    axios.get(`${process.env.API_URL}`, { params :{id: req.query.id}})
     .then(function(exercisedata) {
         res.render("update_exercise", {exercise: exercisedata.data}); // This should render the 'update_exercise.ejs' view file 
     })
